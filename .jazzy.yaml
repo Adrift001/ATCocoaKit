@@ -1,0 +1,10 @@
+author: Optional
+author_url: https://jingxuetao.com/
+github_url: https://github.com/Adrift001/ATCocoaKit
+root_url: https://jingxuetao.com/ATCocoaKit/
+module: ATCocoaKit
+output: docs
+theme: fullwidth
+xcodebuild_arguments: [-workspace, 'ATCocoaKit.xcworkspace', -scheme, 'ATCocoaKit']
+clean: true
+readme: README.md
