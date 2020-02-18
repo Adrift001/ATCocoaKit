@@ -123,19 +123,19 @@
 
                 </div>
               </div>
-            <p>UserDefaults属性包装器</p>
+            <p>UserDefaults Wrapper</p>
 <h1 id='how-to-use' class='heading'>How to use</h1>
 <pre class="highlight swift"><code><span class="c1">// HandyJSON Type</span>
 <span class="kd">class</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">HandyJSON</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">""</span>
     <span class="kd">required</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{}</span>
 <span class="p">}</span>
-<span class="kd">@UserDefaultsWrapper</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="o">.</span><span class="nf">base</span><span class="p">(</span><span class="s">"username"</span><span class="p">),</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
-<span class="k">var</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span>
-
-<span class="c1">// Base Type</span>
 <span class="kd">@UserDefaultsWrapper</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="o">.</span><span class="nf">handyJSON</span><span class="p">(</span><span class="s">"person"</span><span class="p">),</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Person</span><span class="p">())</span>
 <span class="k">var</span> <span class="nv">person</span>
+
+<span class="c1">// Base Type</span>
+<span class="kd">@UserDefaultsWrapper</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="o">.</span><span class="nf">base</span><span class="p">(</span><span class="s">"username"</span><span class="p">),</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
+<span class="k">var</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span>
 </code></pre>
 
           </div>

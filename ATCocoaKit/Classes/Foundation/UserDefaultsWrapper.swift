@@ -18,7 +18,7 @@ public enum UserDefaultsWrapperKey {
 
 
 @propertyWrapper
-/// UserDefaults属性包装器
+/// UserDefaults Wrapper
 ///
 /// How to use
 /// =============
@@ -27,13 +27,13 @@ public enum UserDefaultsWrapperKey {
 ///         var name = ""
 ///         required init() {}
 ///     }
-///     @UserDefaultsWrapper(key: .base("username"), defaultValue: "")
-///     var username: String
-///     
-///     // Base Type
 ///     @UserDefaultsWrapper(key: .handyJSON("person"), defaultValue: Person())
 ///     var person
 ///
+///     // Base Type
+///     @UserDefaultsWrapper(key: .base("username"), defaultValue: "")
+///     var username: String
+
 public struct UserDefaultsWrapper<T: HandyJSON> {
     let key: UserDefaultsWrapperKey
     let defaultValue: T
