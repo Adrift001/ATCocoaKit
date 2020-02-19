@@ -54,7 +54,7 @@ extension ViewController: UITableViewDelegate {
         let row = indexPath.row
         if row == 0 {
             let vc = UIScrollViewExtension(nibName: "UIScrollViewExtension", bundle: nil)
-            navigationController?.pushViewController(vc, animated: true)
+            pushVC(vc)
         }
     }
 }

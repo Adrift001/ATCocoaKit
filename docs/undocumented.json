@@ -1,47 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 14,
-      "symbol": "UserDefaultsWrapperKey",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 15,
-      "symbol": "UserDefaultsWrapperKey.base(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 16,
-      "symbol": "UserDefaultsWrapperKey.handyJSON(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 37,
-      "symbol": "UserDefaultsWrapper",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 40,
-      "symbol": "UserDefaultsWrapper.init(key:defaultValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/swifter/Documents/Github/ATCocoaKit/Example/Pods/ATCocoaKit/ATCocoaKit/Classes/Foundation/UserDefaultsWrapper.swift",
-      "line": 45,
-      "symbol": "UserDefaultsWrapper.wrappedValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/swifter/Documents/Github/ATCocoaKit/Example"
 }
