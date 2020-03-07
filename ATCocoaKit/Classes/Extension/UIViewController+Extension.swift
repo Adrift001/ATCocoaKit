@@ -18,13 +18,13 @@ public extension UIViewController {
     }
     
     /// 从导航堆栈中弹出顶层视图控制器并更新显示
-    ///   - animated: 是否有动画, 默认有
+    /// - Parameter animated: 是否有动画, 默认有
     func popVC(animated: Bool = true) {
         navigationController?.popViewController(animated: animated)
     }
     
     /// 弹出堆栈上除根视图控制器之外的所有视图控制器并更新显示
-    ///   - animated: 是否有动画, 默认有
+    ///   - Parameter animated: 是否有动画, 默认有
     func popToRoot(animated: Bool = true) {
         navigationController?.popToRootViewController(animated: animated)
     }

@@ -19,7 +19,6 @@ public extension UIColor {
     }
     
     /// 十六进制颜色
-    ///
     /// - Parameter hex: 颜色 0xFFFFFF
     convenience init(hex: UInt) {
         let r = (hex >> 16) & 0xFF
@@ -29,7 +28,6 @@ public extension UIColor {
     }
     
     /// RGB颜色
-    ///
     /// - Parameter rgb: r g b
     convenience init(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat = 1.0) {
         self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)

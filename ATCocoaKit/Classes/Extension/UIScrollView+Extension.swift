@@ -11,7 +11,6 @@ public extension UIScrollView {
     
     //MARK: - 头部
     /// 添加头部刷新
-    ///
     /// - Parameter closure: 刷新回调
     func addHeaderRefresh(closure: @escaping MJRefreshComponentAction) {
         let header = MJRefreshNormalHeader(refreshingBlock: closure)
@@ -30,14 +29,12 @@ public extension UIScrollView {
     
     //MARK: - 脚部
     /// 添加脚部自动刷新,一般用这个
-    ///
     /// - Parameter closure: 刷新回调
     func addAutoFooterRefresh(closure: @escaping MJRefreshComponentAction) {
         mj_footer = MJRefreshAutoNormalFooter(refreshingBlock: closure)
     }
     
     /// 添加脚部返回刷新
-    ///
     /// - Parameter closure: 刷新回调
     func addBackFooterRefresh(closure: @escaping MJRefreshComponentAction) {
         mj_footer = MJRefreshBackNormalFooter(refreshingBlock: closure)

@@ -104,7 +104,6 @@ public extension UIView {
     }
     
     /// 批量添加子控件
-    ///
     /// - Parameter views: [view]
     func addSubviews(_ views: [UIView]) {
         var iterator = views.makeIterator()
@@ -114,7 +113,6 @@ public extension UIView {
     }
         
     /// 固定角度圆角
-    ///
     /// - Parameters:
     ///   - corners: 角 [UIRectCorner.topLeft, UIRectCorner.topRight]
     func roundCorners(_ corners: UIRectCorner, radius: CGFloat) {
@@ -128,7 +126,6 @@ public extension UIView {
     }
     
     /// 设置圆角
-    ///
     /// - Parameter radius: 圆角角度
     func setCornerRadius(_ radius: CGFloat) {
         layer.cornerRadius = radius
@@ -161,7 +158,6 @@ public extension UIView {
     }
     
     /// 获取当前view的VC
-    ///
     /// - Returns: VC
     func currentVC() -> UIViewController? {
         var nextResponder = next
