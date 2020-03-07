@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.register(UITableViewCell.self)
+        
+        dismissVC()
     }
 }
 

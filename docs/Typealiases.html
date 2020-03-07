@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Structures  Reference</title>
+    <title>Type Aliases  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Section/Type Aliases" class="dashAnchor"></a>
 
-    <a title="Structures  Reference"></a>
+    <a title="Type Aliases  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">ATCocoaKit Reference</a>
       <img class="carat" src="img/carat.png" />
-      Structures  Reference
+      Type Aliases  Reference
     </p>
 
     <div class="content-wrapper">
@@ -126,8 +126,8 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>Structures</h1>
-            <p>The following structures are available globally.</p>
+            <h1>Type Aliases</h1>
+            <p>The following type aliases are available globally.</p>
 
           </div>
         </section>
@@ -139,9 +139,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10ATCocoaKit19UserDefaultsWrapperV"></a>
-                    <a name="//apple_ref/swift/Struct/UserDefaultsWrapper" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10ATCocoaKit19UserDefaultsWrapperV">UserDefaultsWrapper</a>
+                    <a name="/s:10ATCocoaKit13NormalClosurea"></a>
+                    <a name="//apple_ref/swift/Alias/NormalClosure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10ATCocoaKit13NormalClosurea">NormalClosure</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -149,29 +149,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>UserDefaults Wrapper</p>
-<h1 id='how-to-use' class='heading'>How to use</h1>
-<pre class="highlight swift"><code><span class="c1">// HandyJSON Type</span>
-<span class="kd">class</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">HandyJSON</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">""</span>
-    <span class="kd">required</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{}</span>
-<span class="p">}</span>
-<span class="kd">@UserDefaultsWrapper</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="o">.</span><span class="nf">handyJSON</span><span class="p">(</span><span class="s">"person"</span><span class="p">),</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Person</span><span class="p">())</span>
-<span class="k">var</span> <span class="nv">person</span>
-
-<span class="c1">// Base Type</span>
-<span class="kd">@UserDefaultsWrapper</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="o">.</span><span class="nf">base</span><span class="p">(</span><span class="s">"username"</span><span class="p">),</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="s">""</span><span class="p">)</span>
-<span class="k">var</span> <span class="nv">username</span><span class="p">:</span> <span class="kt">String</span>
-</code></pre>
-
-                        <a href="Structs/UserDefaultsWrapper.html" class="slightly-smaller">See more</a>
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@propertyWrapper</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UserDefaultsWrapper</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">HandyJSON</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">NormalClosure</span> <span class="o">=</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">()</span></code></pre>
 
                         </div>
                       </div>
