@@ -20,7 +20,7 @@ public enum UserDefaultsWrapperKey {
 @propertyWrapper
 /// UserDefaults Wrapper
 ///
-/// How to use
+/// 使用
 /// =============
 ///     // HandyJSON Type
 ///     class Person: HandyJSON {

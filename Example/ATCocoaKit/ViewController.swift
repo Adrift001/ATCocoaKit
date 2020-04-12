@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var person
     
     
-    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension"]
+    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,6 +56,9 @@ extension ViewController: UITableViewDelegate {
         let row = indexPath.row
         if row == 0 {
             let vc = UIScrollViewExtension(nibName: "UIScrollViewExtension", bundle: nil)
+            pushVC(vc)
+        } else if row == 3 {
+            let vc = AttributedStringViewController()
             pushVC(vc)
         }
     }

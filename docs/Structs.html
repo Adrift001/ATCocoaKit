@@ -74,6 +74,9 @@
                 <a class="nav-group-task-link" href="Extensions.html#/s:Si">Int</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/NSMutableAttributedString.html">NSMutableAttributedString</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions.html#/s:SS">String</a>
               </li>
               <li class="nav-group-task">
@@ -111,6 +114,18 @@
             <a class="nav-group-name-link" href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AttributedString.html">AttributedString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AttributedString/StringInterpolation.html">– StringInterpolation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/AttributedString/Style.html">– Style</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs.html#/s:10ATCocoaKit13FontAttributeV">FontAttribute</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/UserDefaultsWrapper.html">UserDefaultsWrapper</a>
               </li>
             </ul>
@@ -142,6 +157,32 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:10ATCocoaKit13FontAttributeV"></a>
+                    <a name="//apple_ref/swift/Struct/FontAttribute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10ATCocoaKit13FontAttributeV">FontAttribute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FontAttribute</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:10ATCocoaKit19UserDefaultsWrapperV"></a>
                     <a name="//apple_ref/swift/Struct/UserDefaultsWrapper" class="dashAnchor"></a>
                     <a class="token" href="#/s:10ATCocoaKit19UserDefaultsWrapperV">UserDefaultsWrapper</a>
@@ -153,7 +194,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>UserDefaults Wrapper</p>
-<h1 id='how-to-use' class='heading'>How to use</h1>
+<h1 id='使用' class='heading'>使用</h1>
 <pre class="highlight swift"><code><span class="c1">// HandyJSON Type</span>
 <span class="kd">class</span> <span class="kt">Person</span><span class="p">:</span> <span class="kt">HandyJSON</span> <span class="p">{</span>
     <span class="k">var</span> <span class="nv">name</span> <span class="o">=</span> <span class="s">""</span>
@@ -181,6 +222,47 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10ATCocoaKit16AttributedStringV"></a>
+                    <a name="//apple_ref/swift/Struct/AttributedString" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10ATCocoaKit16AttributedStringV">AttributedString</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>富文本字符串插值</p>
+<h1 id='使用' class='heading'>使用</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">AttributedString</span> <span class="o">=</span> <span class="s">"""
+</span><span class="se">\(</span><span class="s">"你好,世界"</span><span class="p">,</span> <span class="o">.</span><span class="nf">color</span><span class="p">(</span><span class="o">.</span><span class="n">red</span><span class="p">),</span> <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">)),</span> <span class="o">.</span><span class="nf">bgColor</span><span class="p">(</span><span class="o">.</span><span class="n">green</span><span class="p">)</span><span class="se">)\n</span><span class="s">
+</span><span class="se">\(</span><span class="s">"百度URL"</span><span class="p">,</span> <span class="o">.</span><span class="nf">link</span><span class="p">(</span><span class="s">"https://www.baidu.com"</span><span class="p">),</span> <span class="o">.</span><span class="nf">color</span><span class="p">(</span><span class="o">.</span><span class="n">red</span><span class="p">),</span> <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">))</span><span class="se">)\n</span><span class="s">
+"""</span>
+<span class="c1">// 修改URL颜色</span>
+<span class="c1">// 要打开URL, 需要实现UITextView代理方法shouldInteractWith</span>
+<span class="n">textView</span><span class="o">.</span><span class="n">linkTextAttributes</span> <span class="o">=</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span><span class="o">.</span><span class="nv">foregroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">brown</span><span class="p">]</span>
+<span class="n">textView</span><span class="o">.</span><span class="n">attributedText</span> <span class="o">=</span> <span class="n">attributedString</span><span class="o">.</span><span class="n">attributedString</span>
+</code></pre>
+
+                        <a href="Structs/AttributedString.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AttributedString</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">ExpressibleByStringLiteral</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">ExpressibleByStringInterpolation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -189,8 +271,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://jingxuetao.com/" target="_blank" rel="external">Optional</a>. All rights reserved. (Last updated: 2020-03-26)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://jingxuetao.com/" target="_blank" rel="external">Optional</a>. All rights reserved. (Last updated: 2020-04-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
