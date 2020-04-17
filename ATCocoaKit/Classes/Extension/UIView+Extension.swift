@@ -10,6 +10,25 @@ import UIKit
 
 public extension UIView {
     
+    private struct AssociatedKeys {
+        static var tapGesture = false
+    }
+    
+    /// 添加点击手势
+    /// - Parameter handler: 点击回调
+    func addTapGesture(handler: @escaping NormalClosure) {
+        isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(tapGesture(_:)))
+        addGestureRecognizer(tap)
+        objc_setAssociatedObject(self, &AssociatedKeys.tapGesture, handler, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    }
+    
+    @objc func tapGesture(_ gesture:UITapGestureRecognizer) {
+        if let closure = objc_getAssociatedObject(self, &AssociatedKeys.tapGesture) as? NormalClosure {
+            closure()
+        }
+    }
+    
     /// EZSE: getter and setter for the x coordinate of the frame's origin for the view.
     var x: CGFloat {
         set {

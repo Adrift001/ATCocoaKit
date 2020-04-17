@@ -10,6 +10,8 @@
 		0872C59DAE01F00BF1B62438 /* Pods_ATCocoaKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6588C9A2B6DC713382C2F7 /* Pods_ATCocoaKit_Example.framework */; };
 		0F39898524435B2D00133D1C /* AttributedStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F39898324435B2D00133D1C /* AttributedStringViewController.swift */; };
 		0F39898624435B2D00133D1C /* AttributedStringViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F39898424435B2D00133D1C /* AttributedStringViewController.xib */; };
+		0FB3077924497DF600F0C9BA /* UIViewTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB3077724497DF600F0C9BA /* UIViewTapViewController.swift */; };
+		0FB3077A24497DF600F0C9BA /* UIViewTapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FB3077824497DF600F0C9BA /* UIViewTapViewController.xib */; };
 		0FBEFC6323FB737C001AF65C /* Exports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBEFC6023FB737C001AF65C /* Exports.swift */; };
 		0FBEFC6423FB737C001AF65C /* UIScrollViewExtension.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FBEFC6123FB737C001AF65C /* UIScrollViewExtension.xib */; };
 		0FBEFC6523FB737C001AF65C /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBEFC6223FB737C001AF65C /* UIScrollViewExtension.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		0F39898324435B2D00133D1C /* AttributedStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringViewController.swift; sourceTree = "<group>"; };
 		0F39898424435B2D00133D1C /* AttributedStringViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributedStringViewController.xib; sourceTree = "<group>"; };
+		0FB3077724497DF600F0C9BA /* UIViewTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTapViewController.swift; sourceTree = "<group>"; };
+		0FB3077824497DF600F0C9BA /* UIViewTapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIViewTapViewController.xib; sourceTree = "<group>"; };
 		0FBEFC6023FB737C001AF65C /* Exports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
 		0FBEFC6123FB737C001AF65C /* UIScrollViewExtension.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIScrollViewExtension.xib; sourceTree = "<group>"; };
 		0FBEFC6223FB737C001AF65C /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				0F39898324435B2D00133D1C /* AttributedStringViewController.swift */,
 				0F39898424435B2D00133D1C /* AttributedStringViewController.xib */,
+				0FB3077724497DF600F0C9BA /* UIViewTapViewController.swift */,
+				0FB3077824497DF600F0C9BA /* UIViewTapViewController.xib */,
 			);
 			name = "Example for ATCocoaKit";
 			path = ATCocoaKit;
@@ -195,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F39898624435B2D00133D1C /* AttributedStringViewController.xib in Resources */,
+				0FB3077A24497DF600F0C9BA /* UIViewTapViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -259,6 +266,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				0F39898524435B2D00133D1C /* AttributedStringViewController.swift in Sources */,
+				0FB3077924497DF600F0C9BA /* UIViewTapViewController.swift in Sources */,
 				0FBEFC6323FB737C001AF65C /* Exports.swift in Sources */,
 				0FBEFC6523FB737C001AF65C /* UIScrollViewExtension.swift in Sources */,
 			);

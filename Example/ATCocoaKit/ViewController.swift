@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var person
     
     
-    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString"]
+    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString", "UIViewTapViewController"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -59,6 +59,9 @@ extension ViewController: UITableViewDelegate {
             pushVC(vc)
         } else if row == 3 {
             let vc = AttributedStringViewController()
+            pushVC(vc)
+        } else if row == 4 {
+            let vc = UIViewTapViewController()
             pushVC(vc)
         }
     }

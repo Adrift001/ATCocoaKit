@@ -11,8 +11,8 @@ import UIKit
 public extension UIBarButtonItem {
         
     private struct AssociatedKeys {
-        static var imageKey = "imageKey"
-        static var titleKey = "titleKey"
+        static var imageKey = false
+        static var titleKey = false
     }
     
     /// 图片初始化边界构造器
