@@ -33,7 +33,13 @@ class ViewController: UIViewController {
         
         tableView.register(UITableViewCell.self)
         
+        print("".isNotEmpty)
+        
         dismissVC()
+        let arr: [String] = [""]
+        print(arr.isNotEmpty)
+        let dic: [String: String] = [:]
+        dic.isEmpty
     }
 }
 
