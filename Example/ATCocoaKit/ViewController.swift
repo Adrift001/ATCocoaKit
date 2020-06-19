@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     var person
     
     
-    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString", "UIViewTapViewController"]
+    let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString", "UIViewTapViewController", "showAlert", "showActionSheet"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         let arr: [String] = [""]
         print(arr.isNotEmpty)
         let dic: [String: String] = [:]
-        dic.isEmpty
     }
 }
 
@@ -69,6 +68,23 @@ extension ViewController: UITableViewDelegate {
         } else if row == 4 {
             let vc = UIViewTapViewController()
             pushVC(vc)
+        } else if row == 5 {
+            UIAlertController.showAlert(title: "无法开启相机", message: "请在iPhone的“设置 - 隐私 - 相机”选项中，允许App访问相机。", actionItems: [
+                ActionItem(title: "取消", style: .destructive, action: nil),
+                ActionItem(title: "去设置", style: .default, action: {
+
+                }),
+            ])
+        } else if row == 6 {
+            UIAlertController.showActionSheet(title: "选择证件照", actionItems: [
+                ActionItem(title: "拍照", style: .default, action: {
+
+                }),
+                ActionItem(title: "相册", style: .default, action: {
+
+                }),
+                ActionItem(title: "取消", style: .destructive, action: nil),
+            ])
         }
     }
 }

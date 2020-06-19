@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AttributedString Structure Reference</title>
+    <title>UIAlertController Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/AttributedString" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/UIAlertController" class="dashAnchor"></a>
 
-    <a title="AttributedString Structure Reference"></a>
+    <a title="UIAlertController Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">ATCocoaKit Reference</a>
       <img class="carat" src="../img/carat.png" />
-      AttributedString Structure Reference
+      UIAlertController Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -156,28 +156,14 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>AttributedString</h1>
+            <h1>UIAlertController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AttributedString</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">ExpressibleByStringLiteral</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">AttributedString</span><span class="p">:</span> <span class="kt">ExpressibleByStringInterpolation</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">UIAlertController</span></code></pre>
 
                 </div>
               </div>
-            <p>富文本字符串插值</p>
-<h1 id='使用' class='heading'>使用</h1>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">AttributedString</span> <span class="o">=</span> <span class="s">"""
-</span><span class="se">\(</span><span class="s">"你好,世界"</span><span class="p">,</span> <span class="o">.</span><span class="nf">color</span><span class="p">(</span><span class="o">.</span><span class="n">red</span><span class="p">),</span> <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">)),</span> <span class="o">.</span><span class="nf">bgColor</span><span class="p">(</span><span class="o">.</span><span class="n">green</span><span class="p">)</span><span class="se">)\n</span><span class="s">
-</span><span class="se">\(</span><span class="s">"百度URL"</span><span class="p">,</span> <span class="o">.</span><span class="nf">link</span><span class="p">(</span><span class="s">"https://www.baidu.com"</span><span class="p">),</span> <span class="o">.</span><span class="nf">color</span><span class="p">(</span><span class="o">.</span><span class="n">red</span><span class="p">),</span> <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="kt">UIFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">20</span><span class="p">))</span><span class="se">)\n</span><span class="s">
-"""</span>
-<span class="c1">// 修改URL颜色</span>
-<span class="c1">// 要打开URL, 需要实现UITextView代理方法shouldInteractWith</span>
-<span class="n">textView</span><span class="o">.</span><span class="n">linkTextAttributes</span> <span class="o">=</span> <span class="p">[</span><span class="kt">NSAttributedString</span><span class="o">.</span><span class="kt">Key</span><span class="o">.</span><span class="nv">foregroundColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">brown</span><span class="p">]</span>
-<span class="n">textView</span><span class="o">.</span><span class="n">attributedText</span> <span class="o">=</span> <span class="n">attributedString</span><span class="o">.</span><span class="n">attributedString</span>
-</code></pre>
-
+            
           </div>
         </section>
 
@@ -188,9 +174,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10ATCocoaKit16AttributedStringV010attributedD0So012NSAttributedD0Cvp"></a>
-                    <a name="//apple_ref/swift/Property/attributedString" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10ATCocoaKit16AttributedStringV010attributedD0So012NSAttributedD0Cvp">attributedString</a>
+                    <a name="/s:So17UIAlertControllerC10ATCocoaKitE4showyyF"></a>
+                    <a name="//apple_ref/swift/Method/show()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17UIAlertControllerC10ATCocoaKitE4showyyF">show()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -198,13 +184,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>显示UIAlertController</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">attributedString</span><span class="p">:</span> <span class="kt">NSAttributedString</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">show</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -214,9 +201,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s26ExpressibleByStringLiteralP06stringD0x0cD4TypeQz_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(stringLiteral:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s26ExpressibleByStringLiteralP06stringD0x0cD4TypeQz_tcfc">init(stringLiteral:<wbr>)</a>
+                    <a name="/s:So17UIAlertControllerC10ATCocoaKitE9showAlert5title7message11actionItemsySSSg_AHSayAC10ActionItemVGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/showAlert(title:message:actionItems:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17UIAlertControllerC10ATCocoaKitE9showAlert5title7message11actionItemsySSSg_AHSayAC10ActionItemVGtFZ">showAlert(title:<wbr>message:<wbr>actionItems:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -224,15 +211,67 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>alert风格弹框</p>
+<h1 id='使用' class='heading'> 使用</h1>
+<pre class="highlight swift"><code> <span class="kt">UIAlertController</span><span class="o">.</span><span class="nf">showAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"无法开启相机"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"请在iPhone的“设置 - 隐私 - 相机”选项中，允许App访问相机。"</span><span class="p">,</span> <span class="nv">actionItems</span><span class="p">:</span> <span class="p">[</span>
+    <span class="kt">ActionItem</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"去设置"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="p">{</span>
+
+    <span class="p">}),</span>
+    <span class="kt">ActionItem</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"取消"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="n">cancel</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kc">nil</span><span class="p">),</span>
+ <span class="p">])</span>
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">stringLiteral</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">showAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">actionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ActionItem.html">ActionItem</a></span><span class="p">])</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>标题</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>消息</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actionItems</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>选项</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -240,9 +279,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    <a name="/s:So17UIAlertControllerC10ATCocoaKitE15showActionSheet5title7message11actionItemsySSSg_AHSayAC0F4ItemVGtFZ"></a>
+                    <a name="//apple_ref/swift/Method/showActionSheet(title:message:actionItems:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So17UIAlertControllerC10ATCocoaKitE15showActionSheet5title7message11actionItemsySSSg_AHSayAC0F4ItemVGtFZ">showActionSheet(title:<wbr>message:<wbr>actionItems:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -250,95 +289,70 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>actionSheet风格弹框</p>
+<h1 id='使用' class='heading'> 使用</h1>
+<pre class="highlight swift"><code> <span class="kt">UIAlertController</span><span class="o">.</span><span class="nf">showActionSheet</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"选择证件照"</span><span class="p">,</span> <span class="nv">actionItems</span><span class="p">:</span> <span class="p">[</span>
+     <span class="kt">ActionItem</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"拍照"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="p">{</span>
+
+     <span class="p">}),</span>
+     <span class="kt">ActionItem</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"相册"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="p">{</span>
+
+     <span class="p">}),</span>
+     <span class="kt">ActionItem</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"取消"</span><span class="p">,</span> <span class="nv">style</span><span class="p">:</span> <span class="o">.</span><span class="n">cancel</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kc">nil</span><span class="p">),</span>
+ <span class="p">])</span>
+</code></pre>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">showActionSheet</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">actionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ActionItem.html">ActionItem</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:s32ExpressibleByStringInterpolationP06stringD0x0cD0Qz_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(stringInterpolation:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s32ExpressibleByStringInterpolationP06stringD0x0cD0Qz_tcfc">init(stringInterpolation:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">stringInterpolation</span><span class="p">:</span> <span class="kt"><a href="../Structs/AttributedString/StringInterpolation.html">StringInterpolation</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:s32ExpressibleByStringInterpolationP0cD0Qa"></a>
-                    <a name="//apple_ref/swift/Struct/StringInterpolation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s32ExpressibleByStringInterpolationP0cD0Qa">StringInterpolation</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                        <a href="../Structs/AttributedString/StringInterpolation.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">StringInterpolation</span> <span class="p">:</span> <span class="kt">StringInterpolationProtocol</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10ATCocoaKit16AttributedStringV5StyleV"></a>
-                    <a name="//apple_ref/swift/Struct/Style" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10ATCocoaKit16AttributedStringV5StyleV">Style</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                        <a href="../Structs/AttributedString/Style.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Style</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>标题</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>信息</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actionItems</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>选项</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

@@ -20,7 +20,7 @@ pod 'ATCocoaKit'
 ```
 
 ## Documentation
-[https://jingxuetao.com/ATCocoaExtension/](https://jingxuetao.com/ATCocoaKit/)
+[https://jingxuetao.com/ATCocoaKit/](https://jingxuetao.com/ATCocoaKit/)
 
 ## Author
 
