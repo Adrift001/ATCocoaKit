@@ -30,9 +30,8 @@ public struct ActionItem {
 public extension UIAlertController {
     
     /// 显示UIAlertController
-    func show() {
+    private func show() {
         UIApplication.shared.keyWindow?.rootViewController?.present(self, animated: true, completion: {
-            
             if let transitionView = UIApplication.shared.keyWindow?.subviews.last {
                 transitionView.isUserInteractionEnabled = true
                 for view in transitionView.subviews {
