@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NibLoadable Protocol Reference</title>
+    <title>Dictionary Extension Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Protocol/NibLoadable" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Extension/Dictionary" class="dashAnchor"></a>
 
-    <a title="NibLoadable Protocol Reference"></a>
+    <a title="Dictionary Extension Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -50,7 +50,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">ATCocoaKit Reference</a>
       <img class="carat" src="../img/carat.png" />
-      NibLoadable Protocol Reference
+      Dictionary Extension Reference
     </p>
 
     <div class="content-wrapper">
@@ -159,55 +159,45 @@
 
         <section class="section">
           <div class="section-content top-matter">
-            <h1>NibLoadable</h1>
+            <h1>Dictionary</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NibLoadable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Dictionary</span></code></pre>
 
                 </div>
               </div>
-            <p>加载xib文件</p>
-
+            
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
             <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Available%20where%20%60Self%60:%20%60UIView%60"></a>
-                <a name="//apple_ref/swift/Section/Available where `Self`: `UIView`" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Available%20where%20%60Self%60:%20%60UIView%60"></a>
-                  <h3 class="section-name"><p>Available where <code>Self</code>: <code>UIView</code></p>
-</h3>
-                </div>
-              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10ATCocoaKit11NibLoadablePAASo6UIViewCRbzrlE012loadViewFromC0xyFZ"></a>
-                    <a name="//apple_ref/swift/Method/loadViewFromNib()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10ATCocoaKit11NibLoadablePAASo6UIViewCRbzrlE012loadViewFromC0xyFZ">loadViewFromNib()</a>
+                    <a name="/s:SD10ATCocoaKitE_2orq_x_q_tcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:or:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SD10ATCocoaKitE_2orq_x_q_tcip">subscript(_:<wbr>or:<wbr>)</a>
                     </code>
-                      <span class="declaration-note">
-                        Extension method
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>加载xib文件</p>
+                        <p>UserDefaults Wrapper</p>
+<h1 id='使用' class='heading'>使用</h1>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">name</span> <span class="o">=</span> <span class="n">dic</span><span class="p">[</span><span class="s">"name"</span><span class="p">,</span> <span class="nv">or</span><span class="p">:</span> <span class="s">"哈哈哈哈"</span><span class="p">]</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">loadViewFromNib</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="n">or</span> <span class="n">defaultValue</span><span class="p">:</span> <span class="kt">Value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Value</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>

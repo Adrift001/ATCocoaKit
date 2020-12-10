@@ -38,7 +38,10 @@ class ViewController: UIViewController {
         dismissVC()
         let arr: [String] = [""]
         print(arr.isNotEmpty)
-        let dic: [String: String] = [:]
+        let dic = ["age": 18] as [String : Any]
+        let name = dic["name", or: "哈哈哈哈"]
+        print(name)
+        
     }
 }
 

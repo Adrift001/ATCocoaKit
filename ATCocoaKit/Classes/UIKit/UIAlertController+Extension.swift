@@ -51,7 +51,7 @@ public extension UIAlertController {
     ///   - actionItems: 选项
     ///
     /// 使用
-    ///========
+    /// ========
     ///
     ///     UIAlertController.showAlert(title: "无法开启相机", message: "请在iPhone的“设置 - 隐私 - 相机”选项中，允许App访问相机。", actionItems: [
     ///        ActionItem(title: "去设置", style: .default, action: {
@@ -59,7 +59,7 @@ public extension UIAlertController {
     ///        }),
     ///        ActionItem(title: "取消", style: .cancel, action: nil),
     ///     ])
-    static func showAlert(title: String?, message: String? = nil, actionItems: [ActionItem]) {
+    static func showAlert(title: String? = nil, message: String? = nil, actionItems: [ActionItem]) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         for item in actionItems {
             let alertAction = UIAlertAction(title: item.title, style: item.style, handler: { _ in
@@ -77,7 +77,7 @@ public extension UIAlertController {
     ///   - actionItems: 选项
     ///
     /// 使用
-    ///==========
+    /// ==========
     ///
     ///     UIAlertController.showActionSheet(title: "选择证件照", actionItems: [
     ///         ActionItem(title: "拍照", style: .default, action: {
@@ -88,7 +88,7 @@ public extension UIAlertController {
     ///         }),
     ///         ActionItem(title: "取消", style: .cancel, action: nil),
     ///     ])
-    static func showActionSheet(title: String?, message: String? = nil, actionItems: [ActionItem]) {
+    static func showActionSheet(title: String? = nil, message: String? = nil, actionItems: [ActionItem]) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         for item in actionItems {
             let alertAction = UIAlertAction(title: item.title, style: item.style, handler: { _ in
