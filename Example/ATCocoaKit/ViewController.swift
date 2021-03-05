@@ -17,11 +17,11 @@ class Person: HandyJSON {
 
 class ViewController: UIViewController {
     
-    @UserDefaultsWrapper(key: .base("username"), defaultValue: "")
-    var username: String
+    @UserDefaultsWrapper(key: .base("username"))
+    var username = "username"
     
-    @UserDefaultsWrapper(key: .handyJSON("person"), defaultValue: Person())
-    var person
+    @UserDefaultsWrapper(key: .handyJSON("person"))
+    var person = Person()
     
     
     let dataSource = ["UIScrollView+Extension", "UITableView+Extension", "UICollectionView+Extension", "AttributedString", "UIViewTapViewController", "showAlert", "showActionSheet"]
@@ -32,6 +32,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.register(UITableViewCell.self)
+        
+        print(username)
+        print(person.toJSONString())
         
         print("".isNotEmpty)
         

@@ -1,0 +1,27 @@
+PODS:
+  - ATCocoaKit (0.1.1):
+    - HandyJSON
+    - MJRefresh
+  - HandyJSON (5.0.2)
+  - MJRefresh (3.5.0)
+
+DEPENDENCIES:
+  - ATCocoaKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - MJRefresh
+
+EXTERNAL SOURCES:
+  ATCocoaKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ATCocoaKit: f9ae068789016a5861e8498ac4b22076f6a56872
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+
+PODFILE CHECKSUM: 70d0988f7b7ad1232ea988c6642f351903756ace
+
+COCOAPODS: 1.10.0

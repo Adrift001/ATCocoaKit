@@ -27,19 +27,21 @@ public enum UserDefaultsWrapperKey {
 ///         var name = ""
 ///         required init() {}
 ///     }
-///     @UserDefaultsWrapper(key: .handyJSON("person"), defaultValue: Person())
-///     var person
+///     @UserDefaultsWrapper(key: .handyJSON("person"))
+///     var person = Person()
 ///
 ///     // Base Type
-///     @UserDefaultsWrapper(key: .base("username"), defaultValue: "")
-///     var username: String
+///     @UserDefaultsWrapper(key: .base("username"))
+///     var username = "username"
 
 public struct UserDefaultsWrapper<T: HandyJSON> {
+    
     let key: UserDefaultsWrapperKey
     let defaultValue: T
-    public init(key: UserDefaultsWrapperKey, defaultValue: T) {
+    
+    public init(wrappedValue: T, key: UserDefaultsWrapperKey) {
+        self.defaultValue = wrappedValue
         self.key = key
-        self.defaultValue = defaultValue
     }
     
     public var wrappedValue: T {
