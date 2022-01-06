@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MJRefresh",
+        "repositoryURL": "https://github.com/CoderMJLee/MJRefresh.git",
+        "state": {
+          "branch": null,
+          "revision": "f9db27ea41c7e3f5002be57bbf8fd5bf30f7346e",
+          "version": "3.7.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
